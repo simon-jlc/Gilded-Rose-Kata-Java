@@ -1,3 +1,4 @@
+package kata.gilded.rose;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,9 +23,7 @@ public class GildedRose {
         items.add(new Item("Conjured Mana Cake", 3, 6));
 
         updateQuality();
-}
-
-
+	}
 	
     public static void updateQuality()
     {
@@ -100,6 +99,14 @@ public class GildedRose {
                 }
             }
         }
+    }
+    
+    public static void updateQualityRefactoring() {
+    	
+    	GildedRoseFactory factory = new GildedRoseFactory();
+    	factory.addItem(items);
+    	factory.updateQuality();
+    	
     }
 
 	public void addItem(Item item) {

@@ -102,4 +102,15 @@ public class GildedRose {
         }
     }
 
+	public void addItem(Item item) {
+		if(items == null) {
+			items = new ArrayList<>();
+		}
+		
+		items.add(item);
+	}
+
+	public static void clearItems() {
+		items.clear();
+	}
 }

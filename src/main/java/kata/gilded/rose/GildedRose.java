@@ -102,11 +102,8 @@ public class GildedRose {
     }
     
     public static void updateQualityRefactoring() {
-    	
-    	GildedRoseFactory factory = new GildedRoseFactory();
-    	factory.addItem(items);
-    	factory.updateQuality();
-    	
+    	GildedRoseService factory = new GildedRoseService();
+    	factory.updateQuality(items);
     }
 
 	public void addItem(Item item) {

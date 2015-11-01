@@ -1,3 +1,4 @@
+package kata.gilded.rose;
 
 public class Item {
     public String name;

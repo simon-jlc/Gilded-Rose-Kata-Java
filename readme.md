@@ -1,3 +1,5 @@
+Original code from: https://github.com/wouterla/GildedRose
+==========
 Gilded Rose
 ===========
 
